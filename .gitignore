@@ -1,0 +1,15 @@
+# Folders #
+.idea/*
+.cloud/*
+.storage/*
+deps/*
+tts/*
+
+# Files #
+.HA_VERSION
+.uuid
+home-assistant.log
+home-assistant_v2.db
+known_devices.yaml
+plex.conf
+secrets.yaml
