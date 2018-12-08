@@ -1,0 +1,11 @@
+sensor.utebod_sensor:
+  icon: mdi:run-fast
+
+sensor.boden_sensor:
+  icon: mdi:run-fast
+
+sensor.gangen_sensor:
+  icon: mdi:run-fast
+
+sensor.soverommet_sensor:
+  icon: mdi:run-fast

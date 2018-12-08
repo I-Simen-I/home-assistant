@@ -1,0 +1,5 @@
+sensor.ute_number_of_lights_on:
+  icon: mdi:lightbulb-on
+
+sensor.inne_number_of_lights_on:
+  icon: mdi:lightbulb-on

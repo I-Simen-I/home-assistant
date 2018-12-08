@@ -1,0 +1,5 @@
+sensor.yr_symbol:
+  friendly_name: Yr
+
+sensor.sun_state:
+  icon: mdi:white-balance-sunny

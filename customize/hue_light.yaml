@@ -1,0 +1,14 @@
+light.soverommet:
+  icon: mdi:ceiling-light
+
+light.gangen:
+  icon: mdi:ceiling-light
+
+light.stua_stalampe_sofa:
+  icon: mdi:floor-lamp
+
+light.stua_stalampe_tv:
+  icon: mdi:floor-lamp
+
+light.stua_tv_leddstripe:
+  icon: mdi:led-strip
