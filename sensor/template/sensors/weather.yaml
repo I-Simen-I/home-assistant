@@ -1,0 +1,9 @@
+# Værstatus
+sun_state:
+  friendly_name: 'Sola'
+  value_template: >-
+    {% if is_state('sun.sun', 'above_horizon') %}
+      Oppe
+    {% else %}
+      Nede
+    {% endif %}

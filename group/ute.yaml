@@ -1,0 +1,11 @@
+ha_ute:
+  name: Ute
+  entities:
+    - light.utelys
+
+ha_utebod:
+  name: Utebod
+  entities:
+    - light.utebod
+    - sensor.utebod_sensor
+    - sensor.utebod_temperature

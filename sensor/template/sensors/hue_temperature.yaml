@@ -1,0 +1,20 @@
+# Ha temperatur som en egen enhet
+utebod_temperature:
+  friendly_name: 'Temperatur'
+  value_template: '{{states.sensor.utebod_motion_sensor.attributes.temperature | round(1)}}'
+  unit_of_measurement: °C
+
+gangen_temperature:
+  friendly_name: 'Temperatur'
+  value_template: '{{states.sensor.gangen_motion_sensor.attributes.temperature | round(1)}}'
+  unit_of_measurement: °C
+
+boden_temperature:
+  friendly_name: 'Temperatur'
+  value_template: '{{states.sensor.boden_motion_sensor.attributes.temperature | round(1)}}'
+  unit_of_measurement: °C
+
+soverommet_temperature:
+  friendly_name: 'Temperatur'
+  value_template: '{{states.sensor.soverommet_motion_sensor.attributes.temperature | round(1)}}'
+  unit_of_measurement: °C

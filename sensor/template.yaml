@@ -1,0 +1,3 @@
+# Custom sensor template
+- platform: template
+  sensors: !include_dir_merge_named template/sensors/

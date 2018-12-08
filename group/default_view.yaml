@@ -1,0 +1,5 @@
+# Tomt view da man skal bruke lovelace
+default_view:
+  view: true
+  icon: mdi:home
+  entities:

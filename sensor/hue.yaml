@@ -1,0 +1,4 @@
+# Philips Hue
+- platform: hue
+  ip_address: !secret hue_ip_address
+  token: !secret hue_token

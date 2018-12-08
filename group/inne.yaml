@@ -1,0 +1,32 @@
+ha_gang:
+  name: Gangen
+  entities:
+    - light.gangen
+    - sensor.gangen_sensor
+    - sensor.gangen_temperature
+
+ha_stua:
+  name: Stua
+  entities:
+    - light.stua_stalampe_sofa
+    - light.stua_stalampe_tv
+    - light.stua_tv_leddstripe
+
+ha_stua_media:
+  entities:
+    - media_player.chrome
+    - media_player.stua
+
+ha_innebod:
+  name: Bod
+  entities:
+    - light.boden
+    - sensor.boden_sensor
+    - sensor.boden_temperature
+
+ha_soverommet:
+  name: Soverommet
+  entities:
+    - light.soverommet
+    - sensor.soverommet_sensor
+    - sensor.soverommet_temperature
