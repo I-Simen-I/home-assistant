@@ -1,0 +1,47 @@
+- name: Rolig
+  entities:
+    light.stua_stalampe_sofa:
+      state: on
+      brightness: 254
+      rgb_color: [255,202,114]
+    light.stua_stalampe_tv:
+      state: on
+      brightness: 254
+      rgb_color: [255,202,114]
+    light.stua_tv_leddstripe: off
+
+- name: Kveld
+  entities:
+    light.stua_stalampe_sofa:
+      state: on
+      brightness: 178
+      rgb_color: [255,202,114]
+    light.stua_stalampe_tv:
+      state: on
+      brightness: 178
+      rgb_color: [255,202,114]
+    light.stua_tv_leddstripe:
+      state: on
+      brightness: 127
+      rgb_color: [255,185,126]
+
+- name: Film
+  entities:
+    light.stua_stalampe_sofa:
+      state: on
+      brightness: 127
+      rgb_color: [255,165,76]
+    light.stua_stalampe_tv:
+      state: on
+      brightness: 127
+      rgb_color: [255,165,76]
+    light.stua_tv_leddstripe:
+      state: on
+      brightness: 153
+      rgb_color: [255,160,71]
+
+- name: Alt av
+  entities:
+    light.stua_stalampe_sofa: off
+    light.stua_stalampe_tv: off
+    light.stua_tv_leddstripe: off
