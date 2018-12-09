@@ -1,0 +1,12 @@
+# Hue light scene
+hue_scene_stua_rolig:
+  initial: off
+
+hue_scene_stua_kveld:
+  initial: off
+
+hue_scene_stua_film:
+  initial: off
+
+hue_scene_stua_alt_av:
+  initial: off

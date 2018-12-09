@@ -1,11 +1,15 @@
-scene.rolig:
+switch.scene_stua_rolig:
   icon: mdi:home
+  friendly_name: Rolig
 
-scene.kveld:
+switch.scene_stua_kveld:
   icon: mdi:weather-night
+  friendly_name: Kveld
 
-scene.film:
+switch.scene_stua_film:
   icon: mdi:popcorn
+  friendly_name: Film
 
-scene.alt_av:
+switch.scene_stua_alt_av:
   icon: mdi:power
+  friendly_name: Alt av
