@@ -1,0 +1,136 @@
+# Include external resources
+resources:
+  - url: /local/custom_ui/weather-card.js
+    type: js
+
+excluded_entities:
+  - weblink.router
+views:
+  - title: Hjemme
+    id: home_stats
+    icon: mdi:home-assistant
+    theme: dark-mode
+    cards:
+      - type: entity-filter
+        show_empty: false
+        entities:
+          - device_tracker.simensiniphone
+          - device_tracker.norasiniphone
+        state_filter:
+          - 'home'
+
+      - title: Status ute
+        type: entities
+        entities:
+          - sensor.ute_average_temperature
+          - sensor.ute_number_of_lights_on
+
+      - title: Status inne
+        type: entities
+        entities:
+          - sensor.inne_average_temperature
+          - sensor.inne_number_of_lights_on
+
+  - title: Ute
+    id: ute_stats
+    cards:
+      - title: Status ute
+        type: entities
+        entities:
+          - sensor.ute_average_temperature
+          - sensor.ute_number_of_lights_on
+
+      - type: custom:weather-card
+        entity_weather: weather.metno
+        entity_sun: sensor.sun_state
+
+      - title: Ute
+        type: entities
+        show_header_toggle: false
+        entities:
+          - light.utelys
+
+      - title: Utebod
+        type: entities
+        show_header_toggle: false
+        entities:
+          - light.utebod
+          - sensor.utebod_sensor
+          - sensor.utebod_temperature
+
+      - type: iframe
+        url: https://embed.windy.com/embed2.html
+        aspect_ratio: 75%
+
+  - title: Inne
+    id: inne_stats
+    cards:
+      - title: Status inne
+        type: entities
+        entities:
+          - sensor.inne_average_temperature
+          - sensor.inne_number_of_lights_on
+      - title: Gangen
+        type: entities
+        show_header_toggle: false
+        entities:
+          - light.gangen
+          - sensor.gangen_sensor
+          - sensor.gangen_temperature
+      - title: Bod
+        type: entities
+        show_header_toggle: false
+        entities:
+          - light.boden
+          - sensor.boden_sensor
+          - sensor.boden_temperature
+      - title: Soverommet
+        type: entities
+        show_header_toggle: false
+        entities:
+          - light.soverommet
+          - sensor.soverommet_sensor
+          - sensor.soverommet_temperature
+      - type: vertical-stack
+        cards:
+          - title: Stua
+            type: picture-glance
+            image: https://t-ec.bstatic.com/images/hotel/max1024x768/748/74886831.jpg
+            navigation_path: /lovelace/stua
+            entities:
+              - light.stua
+          - type: entities
+            entities:
+              - light.stua_stalampe_sofa
+              - light.stua_stalampe_tv
+              - light.stua_tv_leddstripe
+  - title: Stua
+    id: stua
+    cards:
+      - title: Stemning
+        type: glance
+        tap_action: toggle
+        entities:
+          - entity: switch.scene_stua_rolig
+            tap_action: toggle
+          - entity: switch.scene_stua_kveld
+            tap_action: toggle
+          - entity: switch.scene_stua_film
+            tap_action: toggle
+          - entity: switch.scene_stua_alt_av
+            tap_action: toggle
+      - title: Lys
+        type: entities
+        entities:
+          - light.stua_stalampe_sofa
+          - light.stua_stalampe_tv
+          - light.stua_tv_leddstripe
+      - title: Plex
+        type: entity-filter
+        show_empty: false
+        entities:
+          - media_player.stua_2
+        state_filter:
+          - 'playing'
+          - 'paused'
+          - 'idle'
