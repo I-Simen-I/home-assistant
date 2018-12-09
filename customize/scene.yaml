@@ -1,0 +1,11 @@
+scene.rolig:
+  icon: mdi:home
+
+scene.kveld:
+  icon: mdi:weather-night
+
+scene.film:
+  icon: mdi:popcorn
+
+scene.alt_av:
+  icon: mdi:power

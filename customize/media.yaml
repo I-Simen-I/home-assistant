@@ -1,5 +1,8 @@
 media_player.chrome:
-  friendly_name: Plex
+  friendly_name: Plex - Chrome
+
+media_player.stua_2:
+  friendly_name: Plex - Apple TV
 
 media_player.stua:
   friendly_name: Apple TV
