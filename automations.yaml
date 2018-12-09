@@ -1,1 +1,33 @@
-[]
+- id: '1544360102981'
+  alias: Plex pauset/stoppet
+  trigger:
+    - entity_id: media_player.chrome
+      from: playing
+      platform: state
+      to: idle
+    - entity_id: media_player.chrome
+      from: playing
+      platform: state
+      to: paused
+  condition: []
+  action:
+    - alias: ''
+      data:
+        entity_id: scene.rolig
+      service: scene.turn_on
+- id: '1544360182923'
+  alias: Plex spiller
+  trigger:
+    - entity_id: media_player.chrome
+      from: idle
+      platform: state
+      to: playing
+    - entity_id: media_player.chrome
+      from: paused
+      platform: state
+      to: playing
+  condition: []
+  action:
+    - data:
+        entity_id: scene.film
+      service: scene.turn_on
