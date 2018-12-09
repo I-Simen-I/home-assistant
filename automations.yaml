@@ -1,33 +1,82 @@
-- id: '1544360102981'
-  alias: Plex pauset/stoppet
-  trigger:
-    - entity_id: media_player.chrome
-      from: playing
-      platform: state
-      to: idle
-    - entity_id: media_player.chrome
-      from: playing
-      platform: state
-      to: paused
+- id: '1544380776330'
+  alias: Rolig
+  trigger: []
   condition: []
   action:
-    - alias: ''
-      data:
-        entity_id: scene.rolig
+  - data:
+      entity_id: scene.rolig
+    service: scene.turn_on
+  - data:
+      entity_id: input_boolean.hue_scene_stua_rolig
+    service: input_boolean.turn_on
+  - data:
+      entity_id: input_boolean.hue_scene_stua_kveld
+    service: input_boolean.turn_off
+  - data:
+      entity_id: input_boolean.hue_scene_stua_film
+    service: input_boolean.turn_off
+  - data:
+      entity_id: input_boolean.hue_scene_stua_alt_av
+    service: input_boolean.turn_off
+- id: '1544382573200'
+  alias: Kveld
+  trigger: []
+  condition: []
+  action:
+    - data:
+        entity_id: scene.kveld
       service: scene.turn_on
-- id: '1544360182923'
-  alias: Plex spiller
-  trigger:
-    - entity_id: media_player.chrome
-      from: idle
-      platform: state
-      to: playing
-    - entity_id: media_player.chrome
-      from: paused
-      platform: state
-      to: playing
+    - data:
+        entity_id: input_boolean.hue_scene_stua_rolig
+      service: input_boolean.turn_off
+    - data:
+        entity_id: input_boolean.hue_scene_stua_kveld
+      service: input_boolean.turn_on
+    - data:
+        entity_id: input_boolean.hue_scene_stua_film
+      service: input_boolean.turn_off
+    - data:
+        entity_id: input_boolean.hue_scene_stua_alt_av
+      service: input_boolean.turn_off
+
+- id: '1544382586253'
+  alias: Film
+  trigger: []
   condition: []
   action:
     - data:
         entity_id: scene.film
       service: scene.turn_on
+    - data:
+        entity_id: input_boolean.hue_scene_stua_rolig
+      service: input_boolean.turn_off
+    - data:
+        entity_id: input_boolean.hue_scene_stua_kveld
+      service: input_boolean.turn_off
+    - data:
+        entity_id: input_boolean.hue_scene_stua_film
+      service: input_boolean.turn_on
+    - data:
+        entity_id: input_boolean.hue_scene_stua_alt_av
+      service: input_boolean.turn_off
+
+- id: '1544381642691'
+  alias: Alt av
+  trigger: []
+  condition: []
+  action:
+  - data:
+      entity_id: scene.alt_av
+    service: scene.turn_on
+  - data:
+      entity_id: input_boolean.hue_scene_stua_rolig
+    service: input_boolean.turn_off
+  - data:
+      entity_id: input_boolean.hue_scene_stua_kveld
+    service: input_boolean.turn_off
+  - data:
+      entity_id: input_boolean.hue_scene_stua_film
+    service: input_boolean.turn_off
+  - data:
+      entity_id: input_boolean.hue_scene_stua_alt_av
+    service: input_boolean.turn_on
