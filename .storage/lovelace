@@ -1,0 +1,209 @@
+{
+    "data": {
+        "config": {
+            "excluded_entities": [
+                "weblink.router"
+            ],
+            "resources": [
+                {
+                    "type": "js",
+                    "url": "/local/custom_ui/weather-card.js"
+                }
+            ],
+            "views": [
+                {
+                    "cards": [
+                        {
+                            "entities": [
+                                "device_tracker.simensiniphone",
+                                "device_tracker.norasiniphone"
+                            ],
+                            "show_empty": false,
+                            "state_filter": [
+                                "home"
+                            ],
+                            "type": "entity-filter"
+                        },
+                        {
+                            "entities": [
+                                "sensor.ute_average_temperature",
+                                "sensor.ute_number_of_lights_on"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Status ute",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "sensor.inne_average_temperature",
+                                "sensor.inne_number_of_lights_on"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Status inne",
+                            "type": "entities"
+                        }
+                    ],
+                    "icon": "mdi:home-assistant",
+                    "id": "home_stats",
+                    "theme": "dark-mode",
+                    "title": "Hjemme"
+                },
+                {
+                    "cards": [
+                        {
+                            "entities": [
+                                "sensor.ute_average_temperature",
+                                "sensor.ute_number_of_lights_on"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Status ute",
+                            "type": "entities"
+                        },
+                        {
+                            "entity_sun": "sensor.sun_state",
+                            "entity_weather": "weather.metno",
+                            "type": "custom:weather-card"
+                        },
+                        {
+                            "entities": [
+                                "light.utelys"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Ute",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "light.utebod",
+                                "sensor.utebod_sensor",
+                                "sensor.utebod_temperature"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Utebod",
+                            "type": "entities"
+                        },
+                        {
+                            "aspect_ratio": "75%",
+                            "type": "iframe",
+                            "url": "https://embed.windy.com/embed2.html"
+                        }
+                    ],
+                    "id": "ute_stats",
+                    "title": "Ute"
+                },
+                {
+                    "cards": [
+                        {
+                            "entities": [
+                                "light.gangen",
+                                "sensor.gangen_sensor",
+                                "sensor.gangen_temperature"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Gangen",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "light.boden",
+                                "sensor.boden_sensor",
+                                "sensor.boden_temperature"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Bod",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "light.soverommet",
+                                "sensor.soverommet_sensor",
+                                "sensor.soverommet_temperature"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Soverommet",
+                            "type": "entities"
+                        },
+                        {
+                            "cards": [
+                                {
+                                    "entities": [
+                                        "light.stua"
+                                    ],
+                                    "image": "https://t-ec.bstatic.com/images/hotel/max1024x768/748/74886831.jpg",
+                                    "tap_action": {
+                                        "action": "navigate",
+                                        "navigation_path": "/lovelace/4"
+                                    },
+                                    "title": "Stua",
+                                    "type": "picture-glance"
+                                },
+                                {
+                                    "entities": [
+                                        "light.stua_stalampe_sofa",
+                                        "light.stua_stalampe_tv",
+                                        "light.stua_tv_leddstripe"
+                                    ],
+                                    "type": "entities"
+                                }
+                            ],
+                            "type": "vertical-stack"
+                        }
+                    ],
+                    "id": "inne_stats",
+                    "title": "Inne"
+                },
+                {
+                    "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "entity": "switch.scene_stua_rolig",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    }
+                                },
+                                {
+                                    "entity": "switch.scene_stua_kveld",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    }
+                                },
+                                {
+                                    "entity": "switch.scene_stua_film",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    }
+                                },
+                                {
+                                    "entity": "switch.scene_stua_alt_av",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    }
+                                }
+                            ],
+                            "title": "Stemning",
+                            "type": "glance"
+                        },
+                        {
+                            "entities": [
+                                "light.stua_stalampe_sofa",
+                                "light.stua_stalampe_tv",
+                                "light.stua_tv_leddstripe"
+                            ],
+                            "title": "Lys",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "media_player.stua",
+                            "type": "media-control"
+                        }
+                    ],
+                    "id": "stua",
+                    "title": "Stua"
+                }
+            ]
+        }
+    },
+    "key": "lovelace",
+    "version": 1
+}

@@ -1,7 +1,10 @@
 # Folders #
 .idea/*
 .cloud/*
-.storage/*
+.storage/auth*
+.storage/cloud*
+.storage/core*
+.storage/onboarding*
 deps/*
 tts/*
 
