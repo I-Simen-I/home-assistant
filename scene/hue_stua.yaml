@@ -1,4 +1,5 @@
-- name: Dag
+# Stua
+- name: stua_dag
   entities:
     light.stua_stalampe_sofa:
       state: on
@@ -10,7 +11,7 @@
       rgb_color: [255,202,114]
     light.stua_tv_leddstripe: off
 
-- name: Kveld
+- name: stua_kveld
   entities:
     light.stua_stalampe_sofa:
       state: on
@@ -25,7 +26,7 @@
       brightness: 127
       rgb_color: [255,185,126]
 
-- name: Film
+- name: stua_film
   entities:
     light.stua_stalampe_sofa:
       state: on
@@ -40,7 +41,7 @@
       brightness: 153
       rgb_color: [255,160,71]
 
-- name: Alt av
+- name: stua_alt_av
   entities:
     light.stua_stalampe_sofa: off
     light.stua_stalampe_tv: off

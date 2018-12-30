@@ -3,41 +3,41 @@ scene_stua_dag:
   turn_on:
     service: automation.trigger
     data:
-      entity_id: automation.dag
+      entity_id: automation.scene_stua_dag
   turn_off:
     service: automation.trigger
     data:
-      entity_id: automation.alt_av
+      entity_id: automation.scene_stua_alt_av
 
 scene_stua_kveld:
   value_template: "{{ is_state('input_boolean.hue_scene_stua_kveld', 'on') }}"
   turn_on:
     service: automation.trigger
     data:
-      entity_id: automation.kveld
+      entity_id: automation.scene_stua_kveld
   turn_off:
     service: automation.trigger
     data:
-      entity_id: automation.alt_av
+      entity_id: automation.scene_stua_alt_av
 
 scene_stua_film:
   value_template: "{{ is_state('input_boolean.hue_scene_stua_film', 'on') }}"
   turn_on:
     service: automation.trigger
     data:
-      entity_id: automation.film
+      entity_id: automation.scene_stua_film
   turn_off:
     service: automation.trigger
     data:
-      entity_id: automation.alt_av
+      entity_id: automation.scene_stua_alt_av
 
 scene_stua_alt_av:
   value_template: "{{ is_state('input_boolean.hue_scene_stua_alt_av', 'on') }}"
   turn_on:
     service: automation.trigger
     data:
-      entity_id: automation.alt_av
+      entity_id: automation.scene_stua_alt_av
   turn_off:
     service: automation.trigger
     data:
-      entity_id: automation.alt_av
+      entity_id: automation.scene_stua_alt_av

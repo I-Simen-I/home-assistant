@@ -1,11 +1,11 @@
 # Stemning
 - id: '1544380776330'
-  alias: Dag
+  alias: scene_stua_dag
   trigger: []
   condition: []
   action:
   - data:
-      entity_id: scene.dag
+      entity_id: scene.stua_dag
     service: scene.turn_on
   - data:
       entity_id: input_boolean.hue_scene_stua_dag
@@ -20,12 +20,12 @@
       entity_id: input_boolean.hue_scene_stua_alt_av
     service: input_boolean.turn_off
 - id: '1544382573200'
-  alias: Kveld
+  alias: scene_stua_kveld
   trigger: []
   condition: []
   action:
   - data:
-      entity_id: scene.kveld
+      entity_id: scene.stua_kveld
     service: scene.turn_on
   - data:
       entity_id: input_boolean.hue_scene_stua_dag
@@ -40,12 +40,12 @@
       entity_id: input_boolean.hue_scene_stua_alt_av
     service: input_boolean.turn_off
 - id: '1544382586253'
-  alias: Film
+  alias: scene_stua_film
   trigger: []
   condition: []
   action:
   - data:
-      entity_id: scene.film
+      entity_id: scene.stua_film
     service: scene.turn_on
   - data:
       entity_id: input_boolean.hue_scene_stua_dag
@@ -60,12 +60,12 @@
       entity_id: input_boolean.hue_scene_stua_alt_av
     service: input_boolean.turn_off
 - id: '1544381642691'
-  alias: Alt av
+  alias: scene_stua_alt_av
   trigger: []
   condition: []
   action:
   - data:
-      entity_id: scene.alt_av
+      entity_id: scene.stua_alt_av
     service: scene.turn_on
   - data:
       entity_id: input_boolean.hue_scene_stua_dag
@@ -83,7 +83,7 @@
 
 # Stua tidstriggere
 - id: '1546162495905'
-  alias: 'Stua: Scene=Alt av(Ukedager), Tid=22:25'
+  alias: 'Rom=Stua, Scene=alt_av, Dager=Ukedager, Tid=22:25'
   trigger:
   - at: '22:25:00'
     platform: time
@@ -97,10 +97,10 @@
     - sun
   action:
   - data:
-      entity_id: automation.alt_av
+      entity_id: automation.scene_stua_alt_av
     service: automation.trigger
 - id: '1546163137757'
-  alias: 'Stua: Scene=Alt av(Helg), Tid=01:00'
+  alias: 'Rom=Stua, Scene=alt_av, Dager=Helg, Tid=01:00'
   trigger:
     - at: '01:00:00'
       platform: time
@@ -111,15 +111,15 @@
         - sat
   action:
     - data:
-        entity_id: automation.alt_av
+        entity_id: automation.scene_stua_alt_av
       service: automation.trigger
 - id: '1546163068281'
-  alias: 'Stua: Scene=Dag, Tid=19:00'
+  alias: 'Rom=Stua, Scene=dag, Dager=Alle, Tid=19:00'
   trigger:
   - at: '19:00:00'
     platform: time
   condition: []
   action:
   - data:
-      entity_id: automation.dag
+      entity_id: automation.scene_stua_dag
     service: automation.trigger
