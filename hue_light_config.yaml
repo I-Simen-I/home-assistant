@@ -1,0 +1,17 @@
+rgb:
+  bright:
+    brightness: 254
+    rgb_color: [255,206,121]
+
+not_rgb:
+  bright:
+    brightness: 254
+    color_temp: 366
+
+  dimmed:
+    brightness: 77
+    color_temp: 366
+
+  nightlight:
+    brightness: 1
+    color_temp: 443
