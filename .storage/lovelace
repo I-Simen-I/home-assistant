@@ -181,6 +181,7 @@
                                     }
                                 }
                             ],
+                            "show_state": false,
                             "title": "Stemning",
                             "type": "glance"
                         },
