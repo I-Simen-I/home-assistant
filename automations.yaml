@@ -142,8 +142,8 @@
   condition: []
   action:
   - data:
-      entity_id: light.ute
-    service: light.turn_on
+      entity_id: scene.ute_utelys_on
+    service: scene.turn_on
 - id: '1546168136247'
   alias: 'Rom=Ute, Tid=07:30, Scene=Utelys av, Dager=Alle'
   trigger:
@@ -151,6 +151,6 @@
       platform: time
   condition: []
   action:
-    - data:
-        entity_id: light.ute
-      service: light.turn_off
+  - data:
+      entity_id: light.ute
+    service: light.turn_off

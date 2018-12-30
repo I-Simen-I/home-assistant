@@ -1,0 +1,6 @@
+- name: ute_utelys_on
+  entities:
+    light.utelys:
+      state: on
+      brightness: 254
+      rgb_color: [255,206,121]
