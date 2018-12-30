@@ -1,4 +1,4 @@
-- name: Rolig
+- name: Dag
   entities:
     light.stua_stalampe_sofa:
       state: on

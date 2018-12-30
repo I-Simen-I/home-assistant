@@ -1,9 +1,9 @@
-scene_stua_rolig:
-  value_template: "{{ is_state('input_boolean.hue_scene_stua_rolig', 'on') }}"
+scene_stua_dag:
+  value_template: "{{ is_state('input_boolean.hue_scene_stua_dag', 'on') }}"
   turn_on:
     service: automation.trigger
     data:
-      entity_id: automation.rolig
+      entity_id: automation.dag
   turn_off:
     service: automation.trigger
     data:

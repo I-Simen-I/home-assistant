@@ -1,6 +1,6 @@
-switch.scene_stua_rolig:
+switch.scene_stua_dag:
   icon: mdi:home
-  friendly_name: Rolig
+  friendly_name: Dag
 
 switch.scene_stua_kveld:
   icon: mdi:weather-night

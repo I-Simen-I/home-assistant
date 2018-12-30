@@ -1,5 +1,5 @@
 # Hue light scene
-hue_scene_stua_rolig:
+hue_scene_stua_dag:
   initial: off
 
 hue_scene_stua_kveld:

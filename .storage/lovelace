@@ -157,7 +157,7 @@
                         {
                             "entities": [
                                 {
-                                    "entity": "switch.scene_stua_rolig",
+                                    "entity": "switch.scene_stua_dag",
                                     "tap_action": {
                                         "action": "toggle"
                                     }
