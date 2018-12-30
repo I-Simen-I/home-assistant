@@ -12,7 +12,7 @@ tts/*
 .HA_VERSION
 .uuid
 home-assistant.log
-*.db
+*.db*
 known_devices.yaml
 plex.conf
 secrets.yaml
