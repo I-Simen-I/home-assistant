@@ -132,3 +132,25 @@
   - data:
       entity_id: automation.scene_stua_kveld
     service: automation.trigger
+
+# Ute tidstriggere
+- id: '1546168116846'
+  alias: 'Rom=Ute, Tid=16:00, Scene=Utelys på, Dager=Alle'
+  trigger:
+  - at: '16:00:00'
+    platform: time
+  condition: []
+  action:
+  - data:
+      entity_id: light.ute
+    service: light.turn_on
+- id: '1546168136247'
+  alias: 'Rom=Ute, Tid=07:30, Scene=Utelys av, Dager=Alle'
+  trigger:
+    - at: '07:30:00'
+      platform: time
+  condition: []
+  action:
+    - data:
+        entity_id: light.ute
+      service: light.turn_off
