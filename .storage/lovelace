@@ -127,7 +127,10 @@
                             "cards": [
                                 {
                                     "entities": [
-                                        "light.stua"
+                                        "switch.scene_stua_dag",
+                                        "switch.scene_stua_kveld",
+                                        "switch.scene_stua_film",
+                                        "switch.scene_stua_alt_av"
                                     ],
                                     "image": "https://t-ec.bstatic.com/images/hotel/max1024x768/748/74886831.jpg",
                                     "tap_action": {
