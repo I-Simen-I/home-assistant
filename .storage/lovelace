@@ -61,7 +61,7 @@
                         },
                         {
                             "entity_sun": "sensor.sun_state",
-                            "entity_weather": "weather.metno",
+                            "entity_weather": "weather.met_no",
                             "type": "custom:weather-card"
                         },
                         {
