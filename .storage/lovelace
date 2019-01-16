@@ -15,17 +15,6 @@
                     "cards": [
                         {
                             "entities": [
-                                "device_tracker.simensiniphone",
-                                "device_tracker.norasiniphone"
-                            ],
-                            "show_empty": false,
-                            "state_filter": [
-                                "home"
-                            ],
-                            "type": "entity-filter"
-                        },
-                        {
-                            "entities": [
                                 "sensor.ute_average_temperature",
                                 "sensor.ute_number_of_lights_on"
                             ],
