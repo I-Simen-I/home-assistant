@@ -21,6 +21,7 @@ frontend:
   javascript_version: latest
   extra_html_url:
     - /local/lovelace.html
+  themes: !include themes.yaml
 
 # Enables configuration UI
 config:
