@@ -106,8 +106,8 @@
   condition:
   - condition: time
     weekday:
-    - fri
     - sat
+    - sun
   action:
   - data:
       entity_id: automation.scene_stua_alt_av
