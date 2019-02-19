@@ -16,6 +16,7 @@ et customoppsett for valg av scener/stemning.
 ![](doc/images/home_assistant_scene_vertical-stack.png) 
 
 Et annet eksempel på scene/stemningskort
+
 ![](doc/images/home_assistant_scene_card.png)
 
 #### Flyt på scenevalg/scenevalg
