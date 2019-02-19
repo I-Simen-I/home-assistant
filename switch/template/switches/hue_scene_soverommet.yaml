@@ -1,0 +1,43 @@
+scene_soverommet_100:
+  value_template: "{{ is_state('input_boolean.hue_scene_soverommet_100', 'on') }}"
+  turn_on:
+    service: automation.trigger
+    data:
+      entity_id: automation.scene_soverommet_100
+  turn_off:
+    service: automation.trigger
+    data:
+      entity_id: automation.scene_soverommet_av
+
+scene_soverommet_60:
+  value_template: "{{ is_state('input_boolean.hue_scene_soverommet_60', 'on') }}"
+  turn_on:
+    service: automation.trigger
+    data:
+      entity_id: automation.scene_soverommet_60
+  turn_off:
+    service: automation.trigger
+    data:
+      entity_id: automation.scene_soverommet_av
+
+scene_soverommet_30:
+  value_template: "{{ is_state('input_boolean.hue_scene_soverommet_30', 'on') }}"
+  turn_on:
+    service: automation.trigger
+    data:
+      entity_id: automation.scene_soverommet_30
+  turn_off:
+    service: automation.trigger
+    data:
+      entity_id: automation.scene_soverommet_av
+
+scene_soverommet_av:
+  value_template: "{{ is_state('input_boolean.hue_scene_soverommet_av', 'on') }}"
+  turn_on:
+    service: automation.trigger
+    data:
+      entity_id: automation.scene_soverommet_av
+  turn_off:
+    service: automation.trigger
+    data:
+      entity_id: automation.scene_soverommet_av

@@ -103,14 +103,32 @@
                             "type": "entities"
                         },
                         {
-                            "entities": [
-                                "light.soverommet",
-                                "sensor.soverommet_sensor",
-                                "sensor.soverommet_temperature"
+                            "cards": [
+                                {
+                                    "entities": [
+                                        "switch.scene_soverommet_100",
+                                        "switch.scene_soverommet_60",
+                                        "switch.scene_soverommet_30",
+                                        "switch.scene_soverommet_av"
+                                    ],
+                                    "image": "/local/banner.png",
+                                    "tap_action": {
+                                        "action": "navigate",
+                                        "navigation_path": "/lovelace/3"
+                                    },
+                                    "title": "Soverommet",
+                                    "type": "picture-glance"
+                                },
+                                {
+                                    "entities": [
+                                        "light.soverommet",
+                                        "sensor.soverommet_sensor",
+                                        "sensor.soverommet_temperature"
+                                    ],
+                                    "type": "entities"
+                                }
                             ],
-                            "show_header_toggle": false,
-                            "title": "Soverommet",
-                            "type": "entities"
+                            "type": "vertical-stack"
                         },
                         {
                             "cards": [
@@ -121,7 +139,7 @@
                                         "switch.scene_stua_film",
                                         "switch.scene_stua_alt_av"
                                     ],
-                                    "image": "https://t-ec.bstatic.com/images/hotel/max1024x768/748/74886831.jpg",
+                                    "image": "/local/banner.png",
                                     "tap_action": {
                                         "action": "navigate",
                                         "navigation_path": "/lovelace/4"

@@ -1,0 +1,33 @@
+- name: soverommet_100
+  entities:
+    light.soverommet_taklampe_1:
+      state: on
+      brightness: 254
+    light.soverommet_taklampe_2:
+      state: on
+      brightness: 254
+
+- name: soverommet_60
+  entities:
+    light.soverommet_taklampe_1:
+      state: on
+      brightness: 154
+    light.soverommet_taklampe_2:
+      state: on
+      brightness: 154
+
+- name: soverommet_30
+  entities:
+    light.soverommet_taklampe_1:
+      state: on
+      brightness: 76
+    light.soverommet_taklampe_2:
+      state: on
+      brightness: 76
+
+- name: soverommet_av
+  entities:
+    light.soverommet_taklampe_1:
+      state: off
+    light.soverommet_taklampe_2:
+      state: off

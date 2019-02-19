@@ -13,3 +13,19 @@ switch.scene_stua_film:
 switch.scene_stua_alt_av:
   icon: mdi:power
   friendly_name: Alt av
+
+switch.scene_soverommet_100:
+  icon: mdi:lightbulb-on-outline
+  friendly_name: 100% Styrke
+
+switch.scene_soverommet_60:
+  icon: mdi:lightbulb-outline
+  friendly_name: 60% styrke
+
+switch.scene_soverommet_30:
+  icon: mdi:weather-night
+  friendly_name: 30% Styrke
+
+switch.scene_soverommet_av:
+  icon: mdi:power
+  friendly_name: Av

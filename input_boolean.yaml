@@ -10,3 +10,15 @@ hue_scene_stua_film:
 
 hue_scene_stua_alt_av:
   initial: off
+
+hue_scene_soverommet_100:
+  initial: off
+
+hue_scene_soverommet_60:
+  initial: off
+
+hue_scene_soverommet_30:
+  initial: off
+
+hue_scene_soverommet_av:
+  initial: off
