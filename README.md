@@ -1,15 +1,15 @@
-#Home assistant
+# Home assistant
 
-##Forside
+## Forside
 ![](doc/images/home_assistant_main.png)
 
-##Oversikt over områder ute
+## Oversikt over områder ute
 ![](doc/images/home_assistant_outside.png)
 
-##Oversikt over rom inne
+## Oversikt over rom inne
 ![](doc/images/home_assistant_inside.png)
 
-###Stemning
+### Stemning
 Kortet for soverommet og stua er satt opp med vertical-stack. Øvre del inneholder
 et customoppsett for valg av scener/stemning.
 
@@ -18,7 +18,7 @@ et customoppsett for valg av scener/stemning.
 Et annet eksempel på scene/stemningskort
 ![](doc/images/home_assistant_scene_card.png)
 
-####Flyt på scenevalg/scenevalg
+#### Flyt på scenevalg/scenevalg
 1. Entity på kort er en switch
 2. Switch trigger en automatisering
 3. Automatiseringen har to funksjoner
