@@ -1,7 +1,7 @@
 utebod_sensor:
   friendly_name: 'Sensor'
   value_template: >-
-    {% if is_state('sensor.utebod_motion_sensor', 'on') %}
+    {% if is_state('binary_sensor.utebod_motion_sensor', 'on') %}
       Bevegelse registrert
     {% else %}
       Ingen bevegelse registrert
@@ -10,7 +10,7 @@ utebod_sensor:
 gangen_sensor:
   friendly_name: 'Sensor'
   value_template: >-
-    {% if is_state('sensor.gangen_motion_sensor', 'on') %}
+    {% if is_state('binary_sensor.gangen_motion_sensor', 'on') %}
       Bevegelse registrert
     {% else %}
       Ingen bevegelse registrert
@@ -19,7 +19,7 @@ gangen_sensor:
 boden_sensor:
   friendly_name: 'Sensor'
   value_template: >-
-    {% if is_state('sensor.boden_motion_sensor', 'on') %}
+    {% if is_state('binary_sensor.boden_motion_sensor', 'on') %}
       Bevegelse registrert
     {% else %}
       Ingen bevegelse registrert
@@ -28,7 +28,7 @@ boden_sensor:
 soverommet_sensor:
   friendly_name: 'Sensor'
   value_template: >-
-    {% if is_state('sensor.soverommet_motion_sensor', 'on') %}
+    {% if is_state('binary_sensor.soverommet_motion_sensor', 'on') %}
       Bevegelse registrert
     {% else %}
       Ingen bevegelse registrert
