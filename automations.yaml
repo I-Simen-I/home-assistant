@@ -110,9 +110,9 @@
       entity_id: automation.scene_stua_alt_av
     service: automation.trigger
 - id: '1546163068281'
-  alias: Rom=Stua, Tid=16:45, Scene=dag, Dager=Alle
+  alias: Rom=Stua, Tid=17:30, Scene=dag, Dager=Alle
   trigger:
-  - at: '16:45:00'
+  - at: '17:30:00'
     platform: time
   condition: []
   action:
@@ -130,9 +130,9 @@
       entity_id: automation.scene_stua_kveld
     service: automation.trigger
 - id: '1546168116846'
-  alias: Rom=Ute, Tid=17:00, Scene=Utelys på, Dager=Alle
+  alias: Rom=Ute, Tid=18:00, Scene=Utelys på, Dager=Alle
   trigger:
-  - at: '17:00:00'
+  - at: '18:00:00'
     platform: time
   condition: []
   action:
@@ -140,9 +140,9 @@
       entity_id: scene.ute_utelys_on
     service: scene.turn_on
 - id: '1546168136247'
-  alias: Rom=Ute, Tid=07:30, Scene=Utelys av, Dager=Alle
+  alias: Rom=Ute, Tid=07:00, Scene=Utelys av, Dager=Alle
   trigger:
-  - at: '07:30:00'
+  - at: '07:00:00'
     platform: time
   condition: []
   action:
