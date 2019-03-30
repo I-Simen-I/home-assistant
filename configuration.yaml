@@ -86,4 +86,5 @@ sector_alarm:
   thermometers: true
   alarm_panel: true
 
+system_health:
 # device_tracker: !include_dir_merge_list device_tracker/
