@@ -1,7 +1,5 @@
 """ Simple asynchronous package for interacting with Sector Alarms web panel """
 
-import async_timeout
-
 from .util import get_json
 
 
@@ -31,15 +29,14 @@ class AsyncSector(object):
     async def login(self):
         """ Tries to Login to Sector Alarm """
 
-        with async_timeout.timeout(10):
-            response = await self._session.post(
-                AsyncSector.Base + AsyncSector.Login, json=self._auth)
+        response = await self._session.post(
+            AsyncSector.Base + AsyncSector.Login, json=self._auth)
 
-            if response.status == 200:
-                result = await response.text()
-                if 'frmLogin' in result:
-                    return False
-                return True
+        if response.status == 200:
+            result = await response.text()
+            if 'frmLogin' in result:
+                return False
+            return True
 
         return False
 
