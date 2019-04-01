@@ -1,12 +1,12 @@
 # Home assistant
 
-## Forside
+### Forside
 ![](doc/images/home_assistant_main.png)
 
-## Oversikt over områder ute
+### Oversikt over områder ute
 ![](doc/images/home_assistant_outside.png)
 
-## Oversikt over rom inne
+### Oversikt over rom inne
 ![](doc/images/home_assistant_inside.png)
 
 ### Stemning
@@ -26,3 +26,6 @@ Et annet eksempel på scene/stemningskort
    1. Et sett med input-booleans oppdateres slik at ikonene på kortet markeres riktig
    2. Skrur på valgt scene/stemning
 4. Scene endrer lysene 
+
+### System
+Støtter home-assistant [v0.90.2](https://github.com/home-assistant/home-assistant/releases/tag/0.90.2)
