@@ -65,7 +65,7 @@
                             "entities": [
                                 "light.utebod",
                                 "sensor.utebod_sensor",
-                                "sensor.utebod_temperature"
+                                "sensor.utebod_sensor_temperature"
                             ],
                             "show_header_toggle": false,
                             "title": "Utebod",
@@ -84,9 +84,18 @@
                     "cards": [
                         {
                             "entities": [
+                                "sensor.inne_average_temperature",
+                                "sensor.inne_number_of_lights_on"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Status inne",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
                                 "light.gangen",
                                 "sensor.gangen_sensor",
-                                "sensor.gangen_temperature"
+                                "sensor.gangen_sensor_temperature"
                             ],
                             "show_header_toggle": false,
                             "title": "Gangen",
@@ -96,7 +105,7 @@
                             "entities": [
                                 "light.boden",
                                 "sensor.boden_sensor",
-                                "sensor.boden_temperature"
+                                "sensor.boden_sensor_temperature"
                             ],
                             "show_header_toggle": false,
                             "title": "Bod",
@@ -123,7 +132,7 @@
                                     "entities": [
                                         "light.soverommet",
                                         "sensor.soverommet_sensor",
-                                        "sensor.soverommet_temperature"
+                                        "sensor.soverommet_sensor_temperature"
                                     ],
                                     "type": "entities"
                                 }

@@ -1,0 +1,11 @@
+sensor.utebod_sensor_temperature:
+  friendly_name: Temperatur
+
+sensor.boden_sensor_temperature:
+  friendly_name: Temperatur
+
+sensor.gangen_sensor_temperature:
+  friendly_name: Temperatur
+
+sensor.soverommet_sensor_temperature:
+  friendly_name: Temperatur

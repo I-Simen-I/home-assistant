@@ -3,7 +3,7 @@ ha_gang:
   entities:
     - light.gangen
     - sensor.gangen_sensor
-    - sensor.gangen_temperature
+    - sensor.gangen_sensor_temperature
 
 ha_stua:
   name: Stua
@@ -22,11 +22,11 @@ ha_innebod:
   entities:
     - light.boden
     - sensor.boden_sensor
-    - sensor.boden_temperature
+    - sensor.boden_sensor_temperature
 
 ha_soverommet:
   name: Soverommet
   entities:
     - light.soverommet
     - sensor.soverommet_sensor
-    - sensor.soverommet_temperature
+    - sensor.soverommet_sensor_temperature
