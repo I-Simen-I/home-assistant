@@ -8,4 +8,4 @@ ha_utebod:
   entities:
     - light.utebod
     - sensor.utebod_sensor
-    - sensor.utebod_temperature
+    - sensor.utebod_sensor_temperature
