@@ -28,4 +28,4 @@ Et annet eksempel på scene/stemningskort
 4. Scene endrer lysene 
 
 ### System
-Støtter home-assistant [v0.92.1](https://github.com/home-assistant/home-assistant/releases/tag/0.92.1)
+Støtter home-assistant [v0.93.1](https://github.com/home-assistant/home-assistant/releases/tag/0.93.1)
