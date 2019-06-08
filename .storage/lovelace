@@ -212,10 +212,6 @@
                             ],
                             "title": "Lys",
                             "type": "entities"
-                        },
-                        {
-                            "entity": "media_player.stua",
-                            "type": "media-control"
                         }
                     ],
                     "id": "stua",
