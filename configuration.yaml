@@ -80,12 +80,5 @@ scene: !include_dir_merge_list scene/
 switch: !include_dir_merge_list switch/
 input_boolean: !include input_boolean.yaml
 
-sector_alarm:
-  email: !secret sector_email
-  password: !secret sector_password
-  alarm_id: !secret sector_alarm_id
-  thermometers: true
-  alarm_panel: true
-
 system_health:
 # device_tracker: !include_dir_merge_list device_tracker/
