@@ -98,7 +98,7 @@
 - id: '1546163137757'
   alias: Rom=Stua, Tid=01:00, Scene=alt_av, Dager=Helg
   trigger:
-  - at: '01:00:00'
+  - at: 01:00:00
     platform: time
   condition:
   - condition: time
@@ -110,9 +110,9 @@
       entity_id: automation.scene_stua_alt_av
     service: automation.trigger
 - id: '1546163068281'
-  alias: Rom=Stua, Tid=19:00, Scene=dag, Dager=Alle
+  alias: Rom=Stua, Tid=19:30, Scene=dag, Dager=Alle
   trigger:
-  - at: '19:00:00'
+  - at: '19:30:00'
     platform: time
   condition: []
   action:
@@ -120,9 +120,9 @@
       entity_id: automation.scene_stua_dag
     service: automation.trigger
 - id: '1546167116060'
-  alias: Rom=Stua, Tid=20:30, Scene=kveld, Dager=Alle
+  alias: Rom=Stua, Tid=21:30, Scene=kveld, Dager=Alle
   trigger:
-  - at: '20:30:00'
+  - at: '21:30:00'
     platform: time
   condition: []
   action:
@@ -130,9 +130,9 @@
       entity_id: automation.scene_stua_kveld
     service: automation.trigger
 - id: '1546168116846'
-  alias: Rom=Ute, Tid=19:30, Scene=Utelys på, Dager=Alle
+  alias: Rom=Ute, Tid=21:30, Scene=Utelys på, Dager=Alle
   trigger:
-  - at: '19:30:00'
+  - at: '21:30:00'
     platform: time
   condition: []
   action:
@@ -142,7 +142,7 @@
 - id: '1546168136247'
   alias: Rom=Ute, Tid=06:30, Scene=Utelys av, Dager=Alle
   trigger:
-  - at: '06:30:00'
+  - at: 06:30:00
     platform: time
   condition: []
   action:
@@ -174,58 +174,58 @@
   trigger: []
   condition: []
   action:
-    - data:
-        entity_id: scene.soverommet_60
-      service: scene.turn_on
-    - data:
-        entity_id: input_boolean.hue_scene_soverommet_100
-      service: input_boolean.turn_off
-    - data:
-        entity_id: input_boolean.hue_scene_soverommet_60
-      service: input_boolean.turn_on
-    - data:
-        entity_id: input_boolean.hue_scene_soverommet_30
-      service: input_boolean.turn_off
-    - data:
-        entity_id: input_boolean.hue_scene_soverommet_av
-      service: input_boolean.turn_off
+  - data:
+      entity_id: scene.soverommet_60
+    service: scene.turn_on
+  - data:
+      entity_id: input_boolean.hue_scene_soverommet_100
+    service: input_boolean.turn_off
+  - data:
+      entity_id: input_boolean.hue_scene_soverommet_60
+    service: input_boolean.turn_on
+  - data:
+      entity_id: input_boolean.hue_scene_soverommet_30
+    service: input_boolean.turn_off
+  - data:
+      entity_id: input_boolean.hue_scene_soverommet_av
+    service: input_boolean.turn_off
 - id: '1550440689004'
   alias: scene_soverommet_30
   trigger: []
   condition: []
   action:
-    - data:
-        entity_id: scene.soverommet_30
-      service: scene.turn_on
-    - data:
-        entity_id: input_boolean.hue_scene_soverommet_100
-      service: input_boolean.turn_off
-    - data:
-        entity_id: input_boolean.hue_scene_soverommet_60
-      service: input_boolean.turn_off
-    - data:
-        entity_id: input_boolean.hue_scene_soverommet_30
-      service: input_boolean.turn_on
-    - data:
-        entity_id: input_boolean.hue_scene_soverommet_av
-      service: input_boolean.turn_off
+  - data:
+      entity_id: scene.soverommet_30
+    service: scene.turn_on
+  - data:
+      entity_id: input_boolean.hue_scene_soverommet_100
+    service: input_boolean.turn_off
+  - data:
+      entity_id: input_boolean.hue_scene_soverommet_60
+    service: input_boolean.turn_off
+  - data:
+      entity_id: input_boolean.hue_scene_soverommet_30
+    service: input_boolean.turn_on
+  - data:
+      entity_id: input_boolean.hue_scene_soverommet_av
+    service: input_boolean.turn_off
 - id: '1550440706772'
   alias: scene_soverommet_av
   trigger: []
   condition: []
   action:
-    - data:
-        entity_id: scene.soverommet_av
-      service: scene.turn_on
-    - data:
-        entity_id: input_boolean.hue_scene_soverommet_100
-      service: input_boolean.turn_off
-    - data:
-        entity_id: input_boolean.hue_scene_soverommet_60
-      service: input_boolean.turn_off
-    - data:
-        entity_id: input_boolean.hue_scene_soverommet_30
-      service: input_boolean.turn_off
-    - data:
-        entity_id: input_boolean.hue_scene_soverommet_av
-      service: input_boolean.turn_on
+  - data:
+      entity_id: scene.soverommet_av
+    service: scene.turn_on
+  - data:
+      entity_id: input_boolean.hue_scene_soverommet_100
+    service: input_boolean.turn_off
+  - data:
+      entity_id: input_boolean.hue_scene_soverommet_60
+    service: input_boolean.turn_off
+  - data:
+      entity_id: input_boolean.hue_scene_soverommet_30
+    service: input_boolean.turn_off
+  - data:
+      entity_id: input_boolean.hue_scene_soverommet_av
+    service: input_boolean.turn_on
