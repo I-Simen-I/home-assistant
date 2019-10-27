@@ -2,8 +2,6 @@ homeassistant:
   # Name of the location where Home Assistant is running
   name: Home
   # Location required to calculate the time the sun rises and sets
-  latitude: !secret latitude
-  longitude: !secret longitude
   # Impacts weather/sunrise data (altitude above sea level in meters)
   elevation: 0
   # metric for Metric, imperial for Imperial
@@ -59,8 +57,6 @@ sun:
 
 # Sensors
 sensor: !include_dir_merge_list sensor/
-binary_sensor:
-  - platform: huesensor
 
 weather:
   - platform: met
@@ -81,4 +77,3 @@ switch: !include_dir_merge_list switch/
 input_boolean: !include input_boolean.yaml
 
 system_health:
-# device_tracker: !include_dir_merge_list device_tracker/

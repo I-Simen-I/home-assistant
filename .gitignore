@@ -1,5 +1,5 @@
 # Folders #
-.idea/*
+.idea
 .cloud/*
 .storage/auth*
 .storage/cloud*
@@ -16,3 +16,15 @@ home-assistant.log
 known_devices.yaml
 plex.conf
 secrets.yaml
+home-assistant_v2.db
+auth
+auth_provider.homeassistant
+cloud
+core.config
+core.area_registry
+core.device_registry
+core.config_entries
+core.entity_registry
+core.restore_state
+onboarding
+person
