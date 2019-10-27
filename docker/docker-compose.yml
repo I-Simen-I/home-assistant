@@ -1,0 +1,9 @@
+version: "3"
+services:
+  home_assistant_demo:
+    image: homeassistant/home-assistant
+    container_name: home-assistant-demo
+    volumes:
+      - ../config:/config
+    ports:
+      - 8123:8123

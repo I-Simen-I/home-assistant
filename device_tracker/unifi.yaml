@@ -1,7 +1,0 @@
-- platform: unifi
-  host: !secret unifi_ip_address
-  verify_ssl: false
-  interval_seconds: 15
-  consider_home: 180
-  username: !secret unifi_username
-  password: !secret unifi_password

@@ -63,9 +63,15 @@
                         },
                         {
                             "entities": [
-                                "light.utebod",
-                                "sensor.utebod_sensor",
-                                "sensor.utebod_sensor_temperature"
+                                {
+                                    "entity": "light.utebod"
+                                },
+                                {
+                                    "entity": "sensor.utebod_sensor"
+                                },
+                                {
+                                    "entity": "sensor.utebod_sensor_temperature"
+                                }
                             ],
                             "show_header_toggle": false,
                             "title": "Utebod",
@@ -93,9 +99,15 @@
                         },
                         {
                             "entities": [
-                                "light.gangen",
-                                "sensor.gangen_sensor",
-                                "sensor.gangen_sensor_temperature"
+                                {
+                                    "entity": "light.gangen"
+                                },
+                                {
+                                    "entity": "sensor.gangen_sensor"
+                                },
+                                {
+                                    "entity": "sensor.gangen_sensor_temperature"
+                                }
                             ],
                             "show_header_toggle": false,
                             "title": "Gangen",
@@ -103,9 +115,15 @@
                         },
                         {
                             "entities": [
-                                "light.boden",
-                                "sensor.boden_sensor",
-                                "sensor.boden_sensor_temperature"
+                                {
+                                    "entity": "light.boden"
+                                },
+                                {
+                                    "entity": "sensor.boden_sensor"
+                                },
+                                {
+                                    "entity": "sensor.boden_sensor_temperature"
+                                }
                             ],
                             "show_header_toggle": false,
                             "title": "Bod",
