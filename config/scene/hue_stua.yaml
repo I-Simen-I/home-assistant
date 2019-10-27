@@ -4,11 +4,11 @@
     light.stua_stalampe_sofa:
       state: on
       brightness: 254
-      rgb_color: [255,202,114]
+      rgb_color: [255,207,120]
     light.stua_stalampe_tv:
       state: on
       brightness: 254
-      rgb_color: [255,202,114]
+      rgb_color: [255,207,120]
     light.stua_tv_leddstripe: off
 
 - name: stua_kveld
@@ -16,15 +16,15 @@
     light.stua_stalampe_sofa:
       state: on
       brightness: 178
-      rgb_color: [255,202,114]
+      rgb_color: [255,207,121]
     light.stua_stalampe_tv:
       state: on
       brightness: 178
-      rgb_color: [255,202,114]
+      rgb_color: [255,207,120]
     light.stua_tv_leddstripe:
       state: on
       brightness: 127
-      rgb_color: [255,185,126]
+      rgb_color: [255,190,129]
 
 - name: stua_film
   entities:
