@@ -9,6 +9,9 @@
 ### Oversikt over rom inne
 ![](doc/images/home_assistant_inside.png)
 
+### Oversikt strømforbruk
+![](doc/images/home_assistant_tibber.png)
+
 ### Stemning
 Kortet for soverommet og stua er satt opp med vertical-stack. Øvre del inneholder
 et customoppsett for valg av scener/stemning.
