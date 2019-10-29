@@ -234,6 +234,54 @@
                     ],
                     "id": "stua",
                     "title": "Stua"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entity": "sensor.electricity_price_dyretrakket_18_e",
+                            "max": 1,
+                            "min": 0,
+                            "name": "Str\u00f8mpris",
+                            "severity": {
+                                "green": 0,
+                                "red": 0.8,
+                                "yellow": 0.6
+                            },
+                            "theme": "default",
+                            "type": "gauge"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.tibber_price_min"
+                                },
+                                {
+                                    "entity": "sensor.tibber_price_avg"
+                                },
+                                {
+                                    "entity": "sensor.tibber_price_max"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Daglig prisstatistikk",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.tibber_grid_company"
+                                },
+                                {
+                                    "entity": "sensor.tibber_eac"
+                                }
+                            ],
+                            "type": "entities"
+                        }
+                    ],
+                    "icon": "mdi:flash",
+                    "path": "elektrisitet",
+                    "title": "Elektrisitet"
                 }
             ]
         }

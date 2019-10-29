@@ -15,7 +15,7 @@ home-assistant.log
 *.db*
 known_devices.yaml
 plex.conf
-secrets.yaml
+config/secrets.yaml
 home-assistant_v2.db
 auth
 auth_provider.homeassistant
