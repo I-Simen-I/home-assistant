@@ -26,7 +26,7 @@ tibber_price_avg:
     {{ state_attr('sensor.electricity_price_dyretrakket_18_e', 'avg_price') }}
 
 tibber_price_max:
-  friendly_name: 'Minimumspris'
+  friendly_name: 'Maksimumspris'
   icon_template: 'mdi:currency-usd'
   unit_of_measurement: "NOK/kWh"
   value_template: >-
