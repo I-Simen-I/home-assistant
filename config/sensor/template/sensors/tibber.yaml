@@ -5,28 +5,28 @@ tibber_grid_company:
     {{ state_attr('sensor.electricity_price_dyretrakket_18_e', 'grid_company') }}
 
 tibber_eac:
-  friendly_name: 'Estimert forbruk'
+  friendly_name: 'Estimert årlig forbruk'
   icon_template: 'mdi:power-plug'
   unit_of_measurement: "kWh"
   value_template: >-
     {{ state_attr('sensor.electricity_price_dyretrakket_18_e', 'estimated_annual_consumption') }}
 
 tibber_price_min:
-  friendly_name: 'Minimumspris'
+  friendly_name: 'Min'
   icon_template: 'mdi:currency-usd'
   unit_of_measurement: "NOK/kWh"
   value_template: >-
     {{ state_attr('sensor.electricity_price_dyretrakket_18_e', 'min_price') }}
 
 tibber_price_avg:
-  friendly_name: 'Gjennomsnittspris'
+  friendly_name: 'Avg'
   icon_template: 'mdi:currency-usd'
   unit_of_measurement: "NOK/kWh"
   value_template: >-
     {{ state_attr('sensor.electricity_price_dyretrakket_18_e', 'avg_price') }}
 
 tibber_price_max:
-  friendly_name: 'Maksimumspris'
+  friendly_name: 'Max'
   icon_template: 'mdi:currency-usd'
   unit_of_measurement: "NOK/kWh"
   value_template: >-

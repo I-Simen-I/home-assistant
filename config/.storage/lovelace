@@ -242,7 +242,7 @@
                             "entity": "sensor.electricity_price_dyretrakket_18_e",
                             "max": 1,
                             "min": 0,
-                            "name": "Str\u00f8mpris",
+                            "name": "Pris n\u00e5",
                             "severity": {
                                 "green": 0,
                                 "red": 0.8,
@@ -250,6 +250,29 @@
                             },
                             "theme": "default",
                             "type": "gauge"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.electricity_price_dyretrakket_18_e",
+                                    "name": "Pris"
+                                }
+                            ],
+                            "hours_to_show": 24,
+                            "refresh_interval": 10,
+                            "title": "Pris siste 24t",
+                            "type": "history-graph"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.tibber_grid_company"
+                                },
+                                {
+                                    "entity": "sensor.tibber_eac"
+                                }
+                            ],
+                            "type": "entities"
                         },
                         {
                             "entities": [
@@ -263,20 +286,9 @@
                                     "entity": "sensor.tibber_price_max"
                                 }
                             ],
-                            "show_header_toggle": false,
-                            "title": "Daglig prisstatistikk",
-                            "type": "entities"
-                        },
-                        {
-                            "entities": [
-                                {
-                                    "entity": "sensor.tibber_grid_company"
-                                },
-                                {
-                                    "entity": "sensor.tibber_eac"
-                                }
-                            ],
-                            "type": "entities"
+                            "show_icon": true,
+                            "title": "Priser i dag",
+                            "type": "glance"
                         }
                     ],
                     "icon": "mdi:flash",
