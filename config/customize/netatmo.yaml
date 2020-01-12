@@ -1,0 +1,17 @@
+sensor.netatmo_s71_inne_stue_noise:
+  friendly_name: Støynivå
+
+sensor.netatmo_s71_inne_stue_co2:
+  friendly_name: CO2 nivå
+
+sensor.netatmo_s71_inne_stue_humidity:
+  friendly_name: Luftfuktighet
+
+sensor.netatmo_s71_inne_stue_wifi:
+  friendly_name: Hovedsender - Wifi
+
+sensor.netatmo_s71_ute_nord_battery_percent:
+  friendly_name: Ute (Nord) - Batteristatus
+
+sensor.netatmo_s71_ute_nord_radio:
+  friendly_name: Ute (Nord) - Signalstyrke

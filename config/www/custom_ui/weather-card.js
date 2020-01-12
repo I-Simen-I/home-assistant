@@ -73,9 +73,9 @@ class WeatherCard extends HTMLElement {
         ];
         const entity = hass.states[this.config.entity_weather];
         const currentCondition = entity.state;
-        const humidity = entity.attributes.humidity;
-        const pressure = entity.attributes.pressure;
-        const temperature = Math.round(entity.attributes.temperature);
+        const humidity = hass.states[this.config.netatmo_humidity].state;
+        const pressure =  Math.round(hass.states[this.config.netatmo_pressure].state);
+        const temperature = hass.states[this.config.netatmo_temp].state;
         const visibility = entity.attributes.visibility;
         const windBearing = windDirections[(parseInt((entity.attributes.wind_bearing + 11.25) / 22.5))];
         const windSpeed = entity.attributes.wind_speed;
@@ -106,7 +106,7 @@ class WeatherCard extends HTMLElement {
     }
 
     setConfig(config) {
-        if (!config.entity_weather || !config.entity_sun) {
+        if (!config.entity_weather || !config.entity_sun || !config.netatmo_temp || !config.netatmo_humidity || !config.netatmo_pressure) {
             throw new Error('Please define entities');
         }
         this.config = config;
